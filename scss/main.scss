@@ -1,0 +1,36 @@
+focus_tree = {
+    id = germany
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = GER_Gestapo
+		icon = GFX_focus_GER_SS
+		cost = 5.71
+		x = 4
+		y = 0
+			completion_reward = {
+					country_event = DH_Germany_SS.1
+		}
+
+	}
+    focus = {
+		id = GER_Heim_ins_Reich
+		icon = GFX_focus_GER_Heim_Ins_Reich
+		cost = 10.00
+		prerequisite = {
+			focus = GER_Volksgemeinschaft
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					unlock_decision_category_tooltip = GER_Heim_ins_Reich
+		}
+
+	}
+}
